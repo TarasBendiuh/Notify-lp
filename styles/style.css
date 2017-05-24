@@ -1,173 +1,282 @@
 /*OMNIPRESENT GREENISH COLOR - #2ecc71*/
 
 /*BASE*/
-    /*-Resets-*/
-    html, body, header, footer, div, section, span, h1, h2, h3, p, img {
+
+    /*Resets*/
+
+    html, body, header, footer, div, span, h1, h2, h3, p, a, iframe,
+    ul, li, input, form, img {
         margin: 0;
         padding: 0;
-        position: relative;
         display: block;
+        position: relative;
     }
-    /*-Typography-*/
-
-    @font-face {
-    font-family: 'HelveticaNeue', 'Raleway', 'Pacifico'; /*a name to be used later*/
-        src: url("../fonts/HelveticaNeue.ttf");
-        src: url("../fonts/Raleway.ttf");
-        src: url("../fonts/Pacifico.ttf");
-}
-    body {
+    html, body{
         font-size: 16px;
-        font-family: 'HelveticaNeue', Fallback;
-        color: #fff;
     }
+
+    /*Typography*/
 
     h1 {
-        font-family: 'Pacifico', Fallback;
+        font-family: 'Pacifico', cursive;
         font-size: 3.750em;
-        margin-bottom: .667em;
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-weight: 400;
     }
-    h1 span {
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.375em;
+        margin-bottom: 32px;
+    }
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.125em;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        line-height: 24px;
+        color: #848484;
+    }
+    a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #848484;
+        text-decoration: none;
+    }
+    span {
         display: inline-block;
         color: #2ECC71;
     }
 
-    h2 {
-        font-size: 1.375em;
-        font-family: 'Raleway';
-        color: #000;
-    }
 
-/*LAYOUT*/
+/*LAYOUT (basic positioning)*/
 
-    /*-Header-*/
+    /*Header*/
     header {
         width: 100%;
-        height: 37.5em;
-        border-top: 0.625em solid #2ecc71;
+        height: 600px;
+        border-top: 10px solid #2ECC71;
         background-image: url("../imgs/header_bg.jpg");
         overflow: hidden;
     }
-    /*-Features-*/
+
+    /*Features*/
+
     #features {
-        height: 20.938em;
+        height: 335px;
+        padding: 60px 0 0 0;
         text-align: center;
     }
 
-    #features p {
-    font-size: 1em;
-    font-family: 'Helvetica Neue';
-    color: #848484;
-    }
+    /*Get notified*/
 
-    #features h2 {
-        margin-bottom: 2em;
-    }
-
-    #theme, #design, #audience {
-        width: 20.000em;
-        display: inline-block;
-    }
-
-    #design {
-        margin: 0 7em 0 7em;
-    }
-
-    /*-Get notified-*/
-    /*
-    #get-notified{
-        height: 26.688em;
+    #get-notified {
+        height: 427px;
+        padding: 60px 0 60px 0;
         background-color: #e3e3e3;
-    }*/
+    }
 
-    /*-Testimonials-*/
-    /*-Get in touch-*/
-    /*-Footer-*/
-
-    /*-Content-*/
+    /*Testimonials*/
+    #testimonials {
+        height: 466px;
+        padding: 60px 0 0 0;
+    }
+    /*Footer*/
+    footer {
+        height: 130px;
+        background-color: #e3e3e3;
+    }
+    /*Content*/
     div.content {
-        width: 75em;
+        width: 1200px;
         margin: 0 auto;
     }
 
-/*MODULE*/
-    /*-Header-*/
-    div.info {
-        width: 30em;
-        margin: 11.313em 0 0 0;
+/*MODULE (stuff inside every module)*/
+
+    /*Header*/
+
+    #logo {
+        margin: 179px 0 0 125px;
     }
 
-    div.info p {
-        font-size: 1.5em;
+    header p {
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 36px;
     }
 
-    div.icon-bg {
-        display: inline-block;
-        width: 3.25em;
-        height: 3.25em;
-        background-color: #000;
+    .hi-bg {
+        width: 52px;
+        height: 52px;
+        background-color: #000000;
         opacity: 0.5;
-        margin: 1.75em .8em 0 0;
-        border-radius: 100%;
-    }
-
-    div.icon-bg img {
-        width: 1.25em;
-        height: 1.5em;
-        margin: auto;
-        top: 0.813em;
-
-    }
-
-    img#phone {
         display: inline-block;
-        position: relative;
-        bottom: 23.2em;
-        left: 39.375em;
+        border-radius: 100%;
+        margin: 30px 14px 10px 0;
     }
 
+    .hi-bg img {
+        height: 21px;
+        width: 22px;
+        margin: 13px auto;
+    }
 
-    /*-Features-*/
+    #window {
+        margin-top: 14px;
+    }
 
-    /*fi stands for FEATURES ICON*/
-    div.fi-bg {
-        width: 6.125em;
-        height: 6.125em;
+    #iphone {
+        position: relative;
+        left: 630px;
+        bottom: 377px;
+    }
+
+    /*Features*/
+
+    #middle {
+        margin: 0 110px 0 110px;
+    }
+
+    #features p {
+        line-height: 26px;
+    }
+
+    .box {
+        display: inline-block;
+        text-align: center;
+        width: 320px;
+    }
+
+    .circle {
+        width: 98px;
+        height: 98px;
+        margin: 31px auto;
         background-color: #2ECC71;
         border-radius: 100%;
-        margin: 3.750em auto 2.250em auto;
     }
 
-    div.fi-bg img {
-        width: 2.813em;
-        height: 2.813em;
+    .circle img {
+        width: 43px;
+        height: 43px;
         margin: auto;
-        top: 1.688em;
+        top: 27px;
     }
 
-    #design img {
-        top: 1.6em;
+    /*Get notified*/
+
+    #info {
+        width: 550px;
     }
 
-    /*-Get notified-*/
-    /*-Testimonials-*/
-    /*-Get in touch-*/
-    /*-Footer-*/
+    #info p {
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    /*form*/
+
+    input {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+
+    #inM {
+        height: 54px;
+        width: 289px;
+        padding-left: 15px;
+        border: 1px solid #c8c8c8;
+        border-radius: 15px 0 0 15px;
+        color: #848484;
+    }
+
+    #inB {
+        height: 56px;
+        width: 141px;
+        background-color: #2ECC71;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        color: #ffffff;
+        text-align: center;
+        margin-left: -4px;
+    }
+
+    iframe {
+        width: 500px;
+        height: 307px;
+        border: 1px solid #b3b3b3;
+        position: relative;
+        left: 690px;
+        bottom: 230px;
+    }
+
+    /*Testimonials*/
+
+    #testimonials {
+        text-align: center;
+    }
+
+    #testimonials h3 {
+        margin: 33px 0 30px 0;
+    }
+
+    #users {
+        margin-bottom: 64px;
+    }
+
+    .faces {
+        width: 50px;
+        height: 50px;
+        background-color: #9eb8ac;
+        margin: 0 1px 0 1px;
+        display: inline-block;
+    }
+
+    /*Get in touch*/
+
+    .iti-bg {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        margin: 30px 5px 0 5px;
+        background-color: #9eb8ac;
+        border-radius: 100%;
+    }
+
+    /*Footer*/
+
+    ul {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    footer li{
+        display: inline-block;
+        margin: 64px 12px 0 12px;
+        text-align: center;
+    }
+
 
 /*STATE*/
-
 /*THEME*/
-
 /*CHANGING STATE*/
-    /*-Hovers-*/
-    /*-Header-*/
-    div.icon-bg {
-        transition: opacity, background-color .5s;
+
+    /*Hovers*/
+
+    /*Logo*/
+
+    .hi-bg {
+        transition: background-color, opacity .5s;
     }
-    div.icon-bg:hover {
+
+    .hi-bg:hover {
         opacity: 1;
         background-color: #2ECC71;
-        transition: .5s ease-out;
     }
 
 
