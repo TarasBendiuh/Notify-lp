@@ -51,6 +51,8 @@
         background-image: url("../imgs/header_bg.jpg");
         border-top: 0.625em solid #2ECC71;
         width: 100%;
+        background-position-y: -8em;
+        background-size: cover;
         overflow: hidden;
     }
 
@@ -271,6 +273,12 @@
         margin: 0 2.313em 0 0;
     }
 
+    #git {
+        display: block;
+        margin: 1em;
+        padding: .5em;
+    }
+
 /*STATE*/
 /*THEME*/
 /*CHANGING STATE*/
@@ -300,6 +308,334 @@
 
     .iti-bg:hover {
         background-color: #2ecc71;
+    }
+
+    /*MEDIA QUERIES*/
+
+    /*--Small Screens--*/
+
+    @media screen and (min-width: 22.500em) and (max-width: 40em) {
+
+        /*Base*/
+
+        h1 {
+            font-size: 2.750em;
+            font-family: 'Pacifico', cursive;
+            font-weight: 300;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.25em;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        h3 {
+            font-size: 1.15em;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        p {
+            font-size: .9em;
+            font-family: 'Roboto', sans-serif;
+            color: #848484;
+            line-height: 1.5em;
+        }
+
+        a {
+            font-size: .9em;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+        }
+
+        div.content {
+            width: 20em;
+        }
+
+        /*Header*/
+
+        header {
+            height: 24em;
+            background-position-y: 0;
+        }
+
+        #logo {
+            width: 28.563em;
+            margin-left: 3.750em;
+            margin-top: 7.250em;
+        }
+
+        #logo>p {
+            font-size: 1em;
+            color: #ffffff;
+        }
+
+        .hi-bg {
+            display: inline-block;
+            background-color: #000000;
+            opacity: .5;
+            border-radius: 100%;
+            margin-right: .8em;
+        }
+
+        .hi-bg>img {
+            width: 1.1em;
+            height: .9em;
+            padding: .7em;
+
+        }
+
+        #iphone {
+            position: relative;
+            left: 43.750em;
+            bottom: 20.95em;
+        }
+
+        /*Features*/
+
+        .box {
+            width: 18em;
+            display: block;
+            text-align: center;
+            margin: 1em auto;
+        }
+
+        .box>p {
+            margin-bottom: 2em;
+        }
+
+        #middle {
+            margin: auto;
+        }
+
+        .circle {
+            background-color: #2ECC71;
+            border-radius: 100%;
+            width: 2em;
+            height: 2em;
+            padding: 1em;
+            margin: 0 auto 2em;
+        }
+
+        /*Get notified*/
+
+        #get-notified {
+            height: auto;
+        }
+
+        #info, #player {
+            position: static;
+            display: block;
+        }
+
+        #info {
+            width: 20em;
+        }
+
+        #player {
+            padding-top: 2em;
+        }
+
+        #info {
+            bottom:  1.45em;
+        }
+
+        iframe {
+            width: 20em;
+            height: 15em;
+        }
+
+        /*form*/
+
+        input {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+        }
+
+        #inM {
+            height: 34px;
+            width: 149px;
+            padding-left: 15px;
+            border: 1px solid #c8c8c8;
+            border-radius: 10px 0 0 10px;
+            color: #848484;
+        }
+
+        #inB {
+            height: 36px;
+            width: 101px;
+            background-color: #2ECC71;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            color: #ffffff;
+            text-align: center;
+            margin-left: -4px;
+        }
+
+        /*Testimonials/Stay-in-touch*/
+
+        /*Footer*/
+
+        footer {
+            text-align: center;
+        }
+
+        footer ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        footer a {
+            font-size: .8em;
+            text-decoration: none;
+            color: #848484;
+        }
+
+        footer li {
+            list-style-type: none;
+            display: inline-block;
+            margin: .2em;
+        }
+
+    }
+
+    /*--Medium Screens--*/
+
+    @media screen and (min-width: 40.063em) and (max-width: 75em) {
+
+        /*Base*/
+
+        div.content {
+            width: 50em;
+        }
+
+        /*Header*/
+
+        header {
+            height: 30em;
+            background-position-y: 0;
+        }
+
+        #logo {
+            margin-left: 3em;
+        }
+
+        #logo>p {
+            font-size: 1.2em;
+        }
+
+        .hi-bg {
+            display: inline-block;
+            background-color: #000000;
+            opacity: .5;
+            border-radius: 100%;
+            margin-right: .8em;
+        }
+
+        .hi-bg>img {
+            width: 1.3em;
+            height: 1.1em;
+            padding: .8em;
+
+        }
+
+        #iphone {
+            width: 20em;
+            height: 20em;
+            position: relative;
+            left: 27.750em;
+            bottom: 15.5em;
+        }
+
+        /*Features*/
+
+        .box {
+            width: 15.5em;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .box>p {
+            margin-bottom: 0;
+        }
+
+        #middle {
+            margin: 0 1.25em;
+        }
+
+        .circle {
+            background-color: #2ECC71;
+            border-radius: 100%;
+            width: 1.688em;
+            height: 1.688em;
+            padding: 1em;
+            margin: 0 auto 2em;
+        }
+
+        /*Get notified*/
+
+        #get-notified {
+            height: auto;
+            text-align: center;
+        }
+
+        #get-notified .content {
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        #info, #player {
+            display: block;
+            position: static;
+            margin: 0 auto;
+        }
+
+        #player {
+            padding-top: 2em;
+        }
+
+        iframe {
+            width: 31.250em;
+            height: 19.188em;
+        }
+
+        /*form*/
+
+        input {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+        }
+
+        #inM {
+            height: 34px;
+            width: 149px;
+            padding-left: 15px;
+            border: 1px solid #c8c8c8;
+            border-radius: 10px 0 0 10px;
+            color: #848484;
+        }
+
+        #inB {
+            height: 36px;
+            width: 101px;
+            background-color: #2ECC71;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            color: #ffffff;
+            text-align: center;
+            margin-left: -4px;
+        }
+
+        /*Testimonials/Stay-in-touch*/
+
+        /*Footer*/
+
     }
 
 
